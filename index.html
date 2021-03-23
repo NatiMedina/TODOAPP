@@ -5,41 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escribir nota</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <h1>
-            TODO App
-        </h1>
+        <nav>
+            <div>
+                TODO App
+            </div>
+            <img src="img/unnamed.png" alt="" class="imagenPortada">
+        </nav>
     </header>
-    <div>
-        <h2>Nueva nota</h2>
-        <input type="text" placeholder="titulo de la nota">
-        <div> <textarea name="" id="" cols="45" rows="5" placeholder=" cuerpo de la nota"></textarea> </div>
-        <button>Agregar nota</button>
-    </div>
+    <main>
+        <div id='crearNota'>
+            <h1>Nueva nota</h1>
+            <input type="text" placeholder="titulo de la nota">
+            <button>Agregar </button>
+            <div> <textarea name="" id="texto" cols="45" rows="20" placeholder=" cuerpo de la nota"></textarea> </div>
+        </div>
 
-    <div>
-        Listado de notas
-        <ul>
-            <li>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam provident eius id culpa sint porro
-                dignissimos soluta natus nihil atque, fugiat ducimus blanditiis animi commodi totam et ullam quidem
-                quae.
-                <button>Editar nota</button><button>Eliminar nota</button>
-            </li>
-            <li>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos provident, doloremque ipsa quia, deleniti
-                vel iste cumque voluptate vitae quis a mollitia rem est ab dolores eum suscipit aut. Consequuntur.
-                <button>Editar Nota</button><button>Eliminar nota</button>
-            </li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nobis voluptatum fuga assumenda itaque
-                vel incidunt odio! Adipisci, odio reiciendis.
-                <button>Editar nota</button><button>Eliminar nota</button>
-            </li>
-        </ul>
-    </div>
+        <div id="listadoNota">
+            Listado de notas
+            <ul>
+                <li>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam provident eius id culpa sint porro
+                    dignissimos soluta natus nihil atque, fugiat ducimus blanditiis animi commodi totam et ullam quidem
+                    quae.
+                    <button>Editar nota</button><button>Eliminar nota</button>
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos provident, doloremque ipsa quia,
+                    deleniti
+                    vel iste cumque voluptate vitae quis a mollitia rem est ab dolores eum suscipit aut. Consequuntur.
+                    <button>Editar Nota</button><button>Eliminar nota</button>
+                </li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nobis voluptatum fuga assumenda
+                    itaque
+                    vel incidunt odio! Adipisci, odio reiciendis.
+                    <button>Editar nota</button><button>Eliminar nota</button>
+                </li>
+            </ul>
+        </div>
+    </main>
 </body>
 
 </html>
