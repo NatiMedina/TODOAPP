@@ -17,8 +17,8 @@
         <nav class="navbar navbar-light row" style="background-color: #7952b3;">
             <div class="container-fluid">
                 <a class="navbar-brand mx-4 fs-1 mt-3" href="#">
-                     TODO App
-                    
+                    TODO App
+
                     <img src="img/unnamed.png" alt="" class="d-inline-block align-text-top"
                         style="width: 4rem; height: 4rem;">
                 </a>
@@ -30,45 +30,46 @@
 
         <!-- Componente Crear Nota -->
 
-        <div id='crearNota' class='row'>
 
-            <div class="col-md-2 col-lg-3"></div>
+        <!-- Button trigger modal -->
+        <div id='crearNota' class='row justify-content-center'>
+                    
+        <div class="d-grid gap-2 col-md-4 col-lg-6">
+            <button type="button" class="btn btn-warning my-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Nueva nota
+            </button>
+        </div>
 
-            <div class="col-12 col-md-8 col-lg-6 pt-4">
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
-                                style="background-color: #e3f2fd;">
-                                <h2 class="tex-body mb-0 pt-2 pb-2 fs-4">Nueva nota</h2>
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body" style="background-color: #e3f2fd;">
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Titulo de la nota</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label">Cuerpo de la
-                                        nota</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <!-- Modal -->
+        <div id='crearNota' class='row justify-content-center'>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Nueva nota</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Titulo de la nota</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Cuerpo de la
+                                    nota</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 
-                                    <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
-                                        <button class="btn btn-warning btn btn-primary" type="button">Guardar
-                                            nota</button>
-                                    </div>
-                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary"
+                                    data-bs-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-primary">Guardar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-2 col-lg-3"></div>
         </div>
 
         <!-- Componente Buscar Nota -->
